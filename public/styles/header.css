@@ -1,0 +1,15 @@
+#idHeader {
+    height: 400px;
+    width: 100%;
+    background-color: #00b0bd;
+    background-image: url("https://www.transparenttextures.com/patterns/cross-stripes.png");
+  }
+  .classImgHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .classHeader {
+    display: flex;
+    justify-content: center;
+  }
