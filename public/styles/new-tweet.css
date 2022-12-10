@@ -1,3 +1,7 @@
+#newTweetForm {
+    font-family: "Bungee";
+    width: 100%;
+}
 .counter {
     font-family: "Bungee";
   }
@@ -10,4 +14,11 @@
     display: flex;
     justify-content: space-between;
   }
-  
+  .textFieldLabel {
+    font-weight: bold;
+    font-family: "Bungee";
+  }
+  .textArea{
+    font-family: "Bungee";
+    width: 100%;
+  }

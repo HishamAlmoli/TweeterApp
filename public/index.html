@@ -44,13 +44,17 @@
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
         
-        <form action="/tweets" method="POST">
-          <div >
-            <label for="tweet-text">What are you humming about?</label>
-            <textarea name="text" id="tweet-text"></textarea>
+        <form id="newTweetForm" action="/tweets/" method="POST">
+          <div class= "text-fields">
+            <div class= "textFieldLabel">
+              <label for="tweet-text">What are you humming about?</label>
+            </div>
+            <div class="textArea">
+              <textarea name="text" id="tweet-text"></textarea>
+            </div>
           </div>
           <div class="submitButton">
-            <button type="submit"class="submit">Tweet</button>
+            <button type="submit" class="submit">Tweet</button>
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
