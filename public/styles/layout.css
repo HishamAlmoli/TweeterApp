@@ -21,6 +21,9 @@ body {
 }
 
 main {
+  display: flex;
+  justify-content: left;
+  flex-direction: column;
   width: 90%;
   margin: 2em;
   background-color: #f4f1ec;

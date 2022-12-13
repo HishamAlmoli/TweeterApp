@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="/styles/nav.css" type="text/css" />
     <link rel="stylesheet" href="/styles/header.css" type="text/css" />
     <link rel="stylesheet" href="/styles/new-tweet.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/tweeets.css" type="text/css" />
 
     <!-- External JS -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -43,7 +44,6 @@
     <main class="container">
       <section class="new-tweet">
         <h2>Compose Tweet</h2>
-        
         <form id="newTweetForm" action="/tweets/" method="POST">
           <div class= "text-fields">
             <div class= "textFieldLabel">
@@ -58,8 +58,14 @@
             <output name="counter" class="counter" for="tweet-text">140</output>
           </div>
         </form>
-
       </section>
     </main>
+    <!-- Tweet Container -->
+    <section class="tweets">
+    </section>
+    <div class="up-btn-container"> 
+    <div class="up-btn hidden"><i class="fa-solid fa-arrow-up-long"></i></div>
+    <!-- <main id="tweets-container">
+    </main> -->
   </body>
 </html>
