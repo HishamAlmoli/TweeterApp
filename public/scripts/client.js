@@ -85,6 +85,28 @@ $(document).ready(function () {
     const content = $(this).serialize();
     const verify = content.slice(5);
     let tweetValue = $(".counter")[0];
+    // Form Validation
+    if (verify.length === 0 || verify === null) {
+      $("#to-long-error").slideUp("slow");
+      $("#no-content-error").slideDown("slow");
+    } else if (verify.length > 140) {
+      $("#no-content-error").slideUp("slow");
+      $("#to-long-error").slideDown("slow");
+    } else {
+      $("#to-long-error").slideUp("slow");
+      $("#no-content-error").slideUp("slow");
+      $.ajax({
+        url: "http://localhost:8080/tweets",
+        method: "POST",
+        data: content,
+      })
+        .done((result) => {
+          loadtweets();
+          $("#tweet-text").val("");
+          tweetValue.value = 140;
+        })
+        .fail((err) => console.log(err.message));
+    }
   });
   // Get Request type from /tweets by AJAX
   const loadtweets = function () {
