@@ -72,6 +72,8 @@ $(document).ready(function () {
   }
   //renderTweets(data);
   
+  /* Use an escape function to preventing 
+    XSS code injection attack */
   const escape = function (str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
