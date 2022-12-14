@@ -13,3 +13,8 @@
     display: flex;
     justify-content: center;
   }
+  .userName {
+    font-size: 35px;
+    margin-top: 25px;
+    color: azure;
+  }

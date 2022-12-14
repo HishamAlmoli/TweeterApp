@@ -36,43 +36,57 @@
   <body>
     <!-- Top nav bar (fixed) -->
     <nav>
-      <span>tweeter</span>
+      <span>
+        tweeter
+      </span>
       <div class="nav-right">
-      <div><b>Write</b> a new tweet</div>
+        <div>
+          Write a new tweet
+        </div>
       <div id="arrow-icon">
-        <i class="fas fa-angle-double-down"></i>
+        <i class="fas fa-angle-double-down">
+        </i>
       </div>
     </div>
     </nav>
     <div class="responsive-header">
-    <!-- Header -->
-    <header id="idHeader">
-      <div class="classImgHeader">
-        <img src="/images/profile-hex.png" />
-      </div>
-      <div class="classHeader">
-        <p class="user-name">
-          <h2>Hisham Almoli</h2>
-        </p>
-      </div>
-    </header>
-<div>
+      <!-- Header -->
+      <header id="idHeader">
+        <div class="classImgHeader">
+          <img src="/images/profile-hex.png" />
+        </div>
+          <div class="classHeader">
+            <p class="userName">
+              <h2>Hisham Almoli</h2>
+            </p>
+          </div>
+      </header>
+  <div>
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <div id="no-content-error">&#9888 Tweet content is not present &#9888</div>
-        <div id="to-long-error">&#9888 Tweet content is too long &#9888</div>
         <!--<h2>Compose Tweet</h2>-->
-        <div class= "class1">
+        <div class= "classImgHeader">
           <div>
           <form id="newTweetForm" action="/tweets/" method="POST"> 
           <div class= "text-fields">
-            <div><label for="tweet-text"><b>What</b> are you humming about?</label></div>
-          <div class="textareadiv"><textarea name="text" class="tweet-text" id="tweet-text" rows="1" cols="250"></textarea></div>
+            <div>
+              <label for="tweet-text">
+                What are you humming about?
+              </label>
+            </div>
+          <div class="textareadiv">
+            <textarea name="text" class="tweet-text" id="tweet-text" rows="1" cols="250">
+            </textarea>
+          </div>
         </div>
           <div class="submit-button">
             <div><button type="submit" id="update-button" class="submit">Tweet</button></div>
-            <div id="tweetCounter"><output name="counter" class="counter" for="tweet-text">140</output></div>
+            <div id="tweetCounter">
+              <output name="counter" class="counter" for="tweet-text">
+                140
+              </output>
+            </div>
           </div>
         </form>
       </section>
