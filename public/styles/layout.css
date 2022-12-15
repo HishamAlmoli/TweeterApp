@@ -1,8 +1,8 @@
-/*
- * http://www.paulirish.com/2012/box-sizing-border-box-ftw/
- * https://css-tricks.com/international-box-sizing-awareness-day/
- * Do not modify these two selectors, please
+/* 
+    Made by: Hisham Almoli
+    Updated: Dec 14, 2022
  */
+ 
 html {
   box-sizing: border-box;
 }
