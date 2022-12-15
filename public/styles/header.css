@@ -18,3 +18,14 @@
     margin-top: 25px;
     color: azure;
   }
+  @media only screen and (min-width: 1024px) {
+    
+    .responsive-header {
+      display: flex;
+      width: 100vw;
+      justify-content: row;
+    }
+    nav {
+      background-color: #4056a1;
+    }
+  }
