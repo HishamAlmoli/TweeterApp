@@ -55,7 +55,9 @@ $(document).ready(function () {
     </div>
     <h1 class="tweet-Handle"> ${tweet.user.handle}</h1>
     </header>
-    <body> <h1 class="tweet-Body"> ${escape(tweet.content.text)}</h1> </body
+    <body> 
+      <h1 class="tweet-Body"> ${escape(tweet.content.text)}</h1> 
+    </body
     <footer> 
       <div class="article-Footer">
       <h1 class= tweet-footer>${timeago.format(tweet.created_at)}</h1>
@@ -79,24 +81,27 @@ $(document).ready(function () {
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
   };
-  $("#no-content-error").hide();
-  $("#to-long-error").hide();
-  // Form post request using Ajax
-  $("#newTweetForm").on("submit", function (event) {
+  $(".tooLongError").hide();
+  $(".contentError").hide();
+  $(".newTweetForm").on("submit", function (event) {
     event.preventDefault();
     const content = $(this).serialize();
     const verify = content.slice(5);
     let tweetValue = $(".counter")[0];
-    // Form Validation
-    if (verify.length === 0 || verify === null) {
-      $("#to-long-error").slideUp("slow");
-      $("#no-content-error").slideDown("slow");
+
+    // Form validation
+    if (verify.length === 0) {
+      $(".tooLongError").slideUp("slow");
+      $(".contentError").slideDown("slow");
+    } else if (verify === null) {
+      $(".tooLongError").slideUp("slow");
+      $(".contentError").slideDown("slow");
     } else if (verify.length > 140) {
-      $("#no-content-error").slideUp("slow");
-      $("#to-long-error").slideDown("slow");
+      $(".contentError").slideUp("slow");
+      $(".tooLongError").slideDown("slow");
     } else {
-      $("#to-long-error").slideUp("slow");
-      $("#no-content-error").slideUp("slow");
+      $(".tooLongError").slideUp("slow");
+      $(".contentError").slideUp("slow");
       $.ajax({
         url: "http://localhost:8080/tweets",
         method: "POST",
@@ -110,7 +115,8 @@ $(document).ready(function () {
         .fail((err) => console.log(err.message));
     }
   });
-  // Get Request type from /tweets by AJAX
+
+  // Get Request via AJAX
   const loadtweets = function () {
     $.ajax({
       url: "/tweets/",

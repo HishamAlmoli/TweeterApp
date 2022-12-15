@@ -1,24 +1,143 @@
-#newTweetForm {
-    font-family: "Bungee";
-    width: 100%;
+.newTweetForm {
+  font-family: "Bungee";
+  width: 100%;
 }
 .counter {
-    font-family: "Bungee";
-  }
-  .submit {
-    color: white;
-    background-color: #4056a1;
-    font-family: "Bungee";
-  }
-  .submitButton {
-    display: flex;
-    justify-content: space-between;
-  }
-  .textFieldLabel {
-    font-weight: bold;
-    font-family: "Bungee";
-  }
-  .textArea{
-    font-family: "Bungee";
-    width: 100%;
-  }
+  font-family: "Bungee";
+}
+.submit {
+  color: white;
+  background-color: #4056a1;
+  font-family: "Bungee";
+}
+.submitButton {
+  display: flex;
+  justify-content: space-between;
+}
+.textFieldLabel {
+  font-weight: bold;
+  font-family: "Bungee";
+}
+.textArea{
+  font-family: "Bungee";
+  width: 100%;
+}
+  /* ****************** */
+  
+#tweet-text {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: white;
+  border-bottom: 3px black solid;
+}
+.submit {
+  font-family: "Bungee";
+  background-color: #4056a1;
+  color: white;
+}
+.counter {
+  font-family: "Bungee";
+}
+b {
+  font-weight: solid;
+}
+
+article {
+  width: 100%;
+  font-size: 15;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-bottom: 45px;
+  border-style: solid;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+article:hover {
+  border: solid;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  box-shadow: 3px 7px #969696de;
+}
+.article-header {
+  background-color: white;
+  padding-bottom: -20px;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.tweet-Header {
+  font-size: 24px;
+  padding-right: 0.2em;
+}
+.tweet-Handle {
+  font-size: 24px;
+  padding-right: 0.2em;
+  opacity: 0.2;
+}
+.tweet-ID {
+  display: flex;
+  flex-direction: row;
+}
+.imageSrc {
+  margin: 10px;
+}
+.tweet-Body {
+  font-size: 24px;
+  padding-left: 0.9em;
+  padding-right: 0.9em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: flex;
+}
+.article-Footer {
+  width: 90;
+  border-top: solid;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.tweet-footer {
+  font-size: 17px;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+}
+.foot-div i {
+  font-size: 16px;
+  color: #4056a1;
+  padding-right: 0.2em;
+}
+.foot-div i:hover {
+  font-size: 16px;
+  color: #d1ad4b;
+}
+/* JQuery Error Alert */
+.contentError {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  border-color: #db221f;
+  color: #db221f;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}
+.tooLongError {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  border-color: #db221f;
+  color: #db221f;
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+}

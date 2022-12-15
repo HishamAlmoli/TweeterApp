@@ -65,10 +65,16 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
+        <div class="contentError">
+          &#9888 Tweet can not be blank
+        </div>
+        <div class="tooLongError">
+          &#9888 Tweet is too long, 140 is the maximum limit
+        </div>
         <!--<h2>Compose Tweet</h2>-->
         <div class= "classImgHeader">
           <div>
-          <form id="newTweetForm" action="/tweets/" method="POST"> 
+          <form class="newTweetForm" action="/tweets/" method="POST"> 
           <div class= "text-fields">
             <div>
               <label for="tweet-text">

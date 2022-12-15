@@ -2,9 +2,10 @@ nav {
     height: 120px;
     color: #ffffff;
     background-color: #4056a1;
-    /* background-image: none; */
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    padding-top: 0.3em;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
 }
 
 nav span {
